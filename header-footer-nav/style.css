@@ -1,0 +1,23 @@
+body {
+
+	margin: 0;
+}
+
+nav {
+
+	height: 50px;
+	background-color: #999999;
+}
+
+
+footer {
+
+	height: 100px;
+	background-color: #CCC;
+}
+
+header {
+
+	height: 150px;
+	background-color: gray;
+}
