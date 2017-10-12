@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<script src="jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+
+
+		$(document).ready(function(){
+			var cont = 0;
+			$(".botao").mouseenter(function(){
+				var top = 50*Math.random();
+				var lef = 95*Math.random();
+				
+
+				var menss = ['Quero meu MacBook ', 'Me deixa em paaaaaz!', 'Vou encontrar as esferas do Dragão', 'Preciso achá-las urgentemente', 'Socorro'];
+
+				$(".msg").html(menss[cont]);
+
+				$("[name='r1']").click(function(){
+				if(this.value=='facil'){
+					$(".area_jogo").css({"height":100, "width":50+"%"});
+				} else if(this.value=='medio'){
+					$(".area_jogo").css({"height":275, "width":70+"%"});
+				} else {
+					$(".area_jogo").css({"height":500, "width":90+"%"});
+				}
+
+
+			});
+
+
+
+				$(this).animate({"margin-top":top+"%", "margin-left":lef+"%", "margin-bottom":top+"%", "margin-right":lef+"%"},555,function(){
+							$(".msg").html("Sai do meu caminho!");
+							$(".msg").css({"font-size":20+"px"})
+
+				});
+
+				cont++;
+				if(cont > menss.length-1)
+					cont=0;
+
+			});
+
+			
+
+				$(".botao").click(function(){
+					$(".msg").html("Acertou");
+					alert("Você me pegou, agora vai com zero!");
+
+				});
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+
+
+	<div class="msg col-md-12" align="center"><h5>Sai do meu caminho!<h5></div>
+	<div class="controle col-md-12" align="center">
+		O Professor Marlon Hugo ficou doidão quando roubaram o seu MacBook, e agora está correndo feito louco no Planeta Namekuseijin atrás das Esferas do Dragão. Parem-o antes que ele fique doidão e consiga fugir!
+	
+
+			<form align="left">
+				DIFICULDADE <br>
+				<input type="radio" name="r1" value="facil">Fácil<br>
+				<input type="radio" name="r1" value="medio">Médio<br>
+				<input type="radio" name="r1" value="dificil">Difícil<br>
+				COM EMOÇÃO:<br> <audio src="emocao.m4a" loop controls></audio>
+			</form>
+
+				<br><br><br><br><br><br>
+				
+	</div>
+	<br>
+	<br>
+
+	<div class="box col-md-12">
+
+		<div class="area_jogo" align="center">
+
+			<img class="botao" src="images/icon-marlon.jpg">
+
+		</div>
+
+	</div>
+</body>
+</html>
