@@ -1,0 +1,261 @@
+.shopping {
+
+	float: right;
+
+}
+
+.title {
+
+	padding: 35px;
+}
+
+.menu, .product {
+
+	background-color: #F8F8FF;
+
+	
+
+}
+
+body {
+	background:  url('/..css/images/ruido.png'), linear-gradient(50deg, #F8F8FF, #F0FFFF); 
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+	margin: 5px;
+	
+}
+
+.borda {
+
+	border: 1px solid #778899;
+
+}
+
+
+
+.tamanho {
+
+	display: inline-block;
+	padding: 5px;
+	margin: 2px;
+	padding: 3px;
+	width: 40px;
+
+
+}
+
+.pad {
+
+	padding: 10px;
+	margin-bottom: 35px; 
+}
+/*botoes coloridos*/
+.master {
+
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.yellow {
+
+	background-color: #F0E68C;
+	border: 2px solid #FFFF00;
+	transition: background 0.5s, color 0.5s;
+
+}
+
+.yellow:hover {
+
+	background-color: #FFFF00;
+	
+}
+
+
+.blue {
+
+	background-color: #4682B4;
+	border: 2px solid #1E90FF;
+	transition: background 0.5s, color 0.5s;
+}
+
+.blue:hover {
+
+	background-color: #1E90FF;
+}
+
+.black {
+
+	background-color: #000000;
+	border: 2px solid #696969;
+	transition: background 0.5s, color 0.5s;
+}
+
+.black:hover {
+	background-color: #696969;
+}
+
+.yellow:focus, .blue:focus, .black:focus, .btn-custom:focus {
+	outline: 0;
+}
+
+
+
+.circle {
+
+	border-radius: 50%;
+}
+
+
+
+/*estrelas*/
+
+.opinion {
+
+	color: #FFD700;
+
+}
+
+/*row btn comprar*/
+
+.central-row {
+
+	padding-top: 50px;
+	margin-left: 10px;
+
+}
+
+.position {
+
+	margin-top: 25px;
+}
+
+/*btn comprar*/
+
+.btn-custom {
+
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 8px;
+	color: #fff;
+	background-color: #4682B4;
+	transition: background 0.5s, color 0.5s;
+	transition: width 0.4s;
+	
+
+
+
+}
+
+.btn-custom:hover {
+
+	background-color: #4169E1;
+
+}
+
+/*input radio*/
+
+
+.inputFocus {
+	outline: 0;
+
+}
+
+input[type='radio'] {
+	-webkit-box-shadow: inset 0 1px 2px white, 0 1px 2px rgba(0, 0, 0, .2);
+	-webkit-appearance: none;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 3px;
+	-webkit-transition: border 1s;
+	background: -webkit-linear-gradient(#fafafa, #dcdcdc);
+	border-radius: 100%;
+	border: 1px solid #a0a0a0;
+	display: inline-block;
+	height: 15px;
+	margin-bottom: 0;
+	position: relative;
+	top: 3px;
+	vertical-align: baseline;
+	width: 15px;
+}
+input[type='radio']:disabled {
+	opacity: .75;
+}
+input[type='radio']:not(:disabled):not(:active):hover {
+	background: -webkit-linear-gradient(#fff, #e6e6e6);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+}
+input[type='radio']:not(:disabled):active {
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+	background: -webkit-linear-gradient(#f0f0f0, #bebebe);
+	border: 1px solid #808080;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+}
+input[type='radio']:checked::before {
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	-webkit-margin-start: 4px;	
+	background: #808080;
+	border-radius: 10px;
+	content: '';
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 400;
+	height: 5px;
+	left: 0;
+	margin-top: 4px;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	vertical-align: top;
+	width: 5px;
+}
+html[dir='rtl'] input[type='radio']:checked::before {
+	right: 0;
+}
+input[type='radio']:active:checked::before {
+	background: #606060;
+}
+
+/*imagens*/
+
+.img-book {
+
+	margin-top: 100px;
+	
+
+}
+
+.mini-img-1 {
+
+	margin-top: 50px;
+	margin-bottom: 10px;
+
+}
+
+.img-pad {
+	padding: 5px;
+}
+
+
+/*Texto form and Product*/
+
+.product {
+
+	
+	padding-top: 15px;
+	text-align: center;
+
+
+}
+
+
+.texto-form {
+
+	text-align: center;
+	color: #778899;
+	font-size: 12px;
+	
+
+
+}
