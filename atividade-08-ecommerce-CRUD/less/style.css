@@ -1,0 +1,120 @@
+body {
+
+	background-color: #f4f4f6;
+	background-image: url(../img/layout.jpg);
+	background-repeat: repeat;
+	padding-top: 50px;
+
+
+}
+
+body, html {
+
+	height: 100%;
+	overflow: auto;
+}
+
+
+.textoAmarelo{
+	color: yellow !important;
+}
+
+.textoCinza{
+	color: #DCDCDC !important;
+}
+
+.textoBranco {
+
+	color: white !important;
+
+
+}
+
+
+.btn-white, .btn-white:hover {
+
+	color: white;
+
+}
+
+.btn-position {
+
+	margin: 0 auto;
+
+}
+
+.new-carrinho {
+
+	margin-top: 80px;
+}
+
+.espaco {
+
+	padding: 15px;
+}
+
+nav.navbar-transparente, .rodape {
+
+	opacity: 0.8;
+	padding: 15px 0px;
+	border: none;
+} 
+
+/*Rodape*/
+.social-icons {
+
+	width: 100%;
+}
+
+
+
+.social-icons a{
+	font-size: 20px;
+	color: #fff;
+	margin-right: 30px;
+	opacity: 0.5;
+	
+
+
+}
+
+.social-icons a:last-child {
+
+	margin-right: 0;
+}
+
+.social-icons a:hover {
+
+	opacity: 1;
+}
+
+.direitos {
+
+	margin: 0 auto;
+	color: #fff;
+	opacity: 0.5;
+
+
+}
+
+
+
+.cor-menu-rodape {
+
+
+	background:  url('img/layout.jpg'), linear-gradient(50deg, #000000, #000010); 
+	opacity: 0.9;
+
+
+}
+
+.listaGrande {
+
+	margin-bottom: 150px;
+	padding: 0px;
+}
+
+footer {
+
+	padding-top: 15px;
+}
